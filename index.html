@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg" sizes="32x32" href="asset/ICO.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <textarea
+        rows="3"
+        placeholder="ketik sesuatu di sini"
+        id="my-text-box"
+      ></textarea>
+      <div id="result">Tekan Salah satu tombol di bawah ini untuk memulai</div>
+      <div class="buttons">
+        <button onclick="reverse()">Reverse</button>
+        <button onclick="Palindrome()">Palindrome</button>
+      </div>
+      <div class="buttons">
+        <button onclick="hitungHuruf()">Hitung Huruf</button>
+        <button onclick="hitungKalimat()">Hitung Kalimat</button>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-text"
+          placeholder="ketik kalimat yang ingin dicari"
+        />
+        <button onclick="search()">Cari</button>
+      </div>
+    </div>
+    <script src="src/javas.js"></script>
+  </body>
+</html>
